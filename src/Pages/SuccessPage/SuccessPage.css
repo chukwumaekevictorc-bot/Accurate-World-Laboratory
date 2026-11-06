@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  color: #333333;
+}
+
+.success-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.success-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 540px;
+  padding: 40px 30px;
+  text-align: center;
+  border-top: 6px solid #0056b3;
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: #e6f4ea;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.checkmark-icon {
+  width: 48px;
+  height: 48px;
+  color: #1e7e34;
+}
+
+.brand-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0056b3;
+  background-color: #eef5ff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.success-title {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.success-message {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn {
+  flex: 1;
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-align: center;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #004085;
+}
+
+.btn-secondary {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.btn-secondary:hover {
+  background-color: #dee2e6;
+}
+
+/* Media Query for Mobile Viewports */
+@media screen and (max-width: 600px) {
+  .success-card {
+    padding: 30px 20px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .success-title {
+    font-size: 1.4rem;
+  }
+
+  .success-message {
+    font-size: 0.9rem;
+  }
+}

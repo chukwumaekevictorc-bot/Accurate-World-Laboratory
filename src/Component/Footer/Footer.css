@@ -1,0 +1,17 @@
+/*5. FOOTER STYLES */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #bbb;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Media Query: Footer */
+@media (max-width: 768px) {
+  footer {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
