@@ -54,10 +54,13 @@
   border-radius: 5px;
   font-weight: bold;
   transition: 0.3s;
+  background: #004080;
+  color: white;
 }
 
 .hero-btn:hover {
   transform: translateY(-3px);
+  background: #046fda;
 }
 
 /* HERO MEDIA QUERY */
